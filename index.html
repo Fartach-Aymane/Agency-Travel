@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fartach Agency</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .jumbotron {
+            background-image: url('img/bg_2.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px ;
+            height: 100vh;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #007bff;
+            font-family: sans-serif;
+            font-style: italic;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fartach Agency</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#description">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#booking">Book Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#flying">Fly Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1 class="display-4">Explore the World with Us</h1>
+        <p class="lead">Discover amazing destinations and create unforgettable memories with Your Travel Agency.</p>
+        <a class="btn btn-primary btn-lg" href="#booking" role="button">Book Now</a>
+        <a class="btn btn-primary btn-lg" href="#flying" role="button">Fly Now</a>
+    </div>es
+
+    <br>
+
+    <!-- Flying Section -->
+    <section>    
+        <form id="flying" class="container">
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="Departure location" required>
+
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="Destination" required>
+
+            <label for="date">Date of Travel:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="passengers">Number of Passengers:</label>
+            <select id="passengers" name="passengers" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="4">5</option>
+            </select>
+
+            <button type="submit">Book Flight</button>
+        </form>
+    </section>
+
+    <br>
+
+    <!-- About Us Section -->
+    <section id="description" class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <p>Welcome to our travel agency's online portal! At our agency, we believe that each journey is a unique story waiting to be written, and we are here to help you create unforgettable chapters. As seasoned travel enthusiasts, our mission is to curate exceptional experiences that cater to a variety of tastes and preferences. From sun-kissed beaches to culturally rich cities and thrilling adventures off the beaten path, our website offers a diverse array of destinations and customizable itineraries. Our team of travel experts is dedicated to providing personalized assistance, ensuring that your travel plans align perfectly with your desires. Navigate through our site to uncover exclusive deals, enticing travel packages, and embark on a virtual journey with us as you plan your next escape.
+        <br><br>
+        Discover a world of possibilities as you explore our travel agency website. With a commitment to excellence, we strive to be your trusted partner in crafting seamless and enriching travel experiences. Whether you seek the tranquility of a tropical paradise or the excitement of exploring vibrant cityscapes, our site is designed to inspire and assist you in creating the perfect getaway. Dive into our curated collection of destinations, browse through enticing travel packages, and let your wanderlust guide you. Welcome aboard, and let the adventure begin!</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/bg_2.jpg" class="card-img-top" alt="Service 1"  width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Booking</h5>
+                        <p class="card-text">Booking is a streamlined and user-friendly online platform that revolutionized the way people plan and reserve travel .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/room-6.jpg" class="card-img-top" alt="Service 2" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Room</h5>
+                        <p class="card-text">A room is a defined space within a building designed for a specific purpose, typically providing shelter, privacy, and functionality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/resturant.jpg" class="card-img-top" alt="Service 3" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Resturant</h5>
+                        <p class="card-text">Typically characterized by a combination of culinary expertise, restaurants offer a diverse range of cuisines to cater to various tastes. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="container">
+        <h2 class="text-center mb-4">Our Rooms</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/room-1.jpg" class="card-img-top" alt="Room 1" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Suite Room</h5>
+                        <h6>120.00$</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/room-2.jpg" class="card-img-top" alt="Room 2" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Family Room</h5>
+                        <h6>20.00$</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/room-3.jpg" class="card-img-top" alt="Room 3" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Deluxe Room</h5>
+                        <h6>150.00$</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/room-4.jpg" class="card-img-top" alt="Room 1" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Room</h5>
+                        <h6>130.00$</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/room-5.jpg" class="card-img-top" alt="Room 2" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Superior Room</h5>
+                        <h6>300.00$</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/room-6.jpg" class="card-img-top" alt="Room 3" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Room</h5>
+                        <h6>500.00$</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Resturant Section -->
+    <section id="rooms" class="container">
+        <h2 class="text-center mb-4">Our Resturants</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/couscous.jpg" class="card-img-top" alt="Room 1" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Couscous</h5>
+                        <h6>30.00$</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/tajine.jpg" class="card-img-top" alt="Room 2" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Tajine</h5>
+                        <h6>20.00$</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/maro.jpg" class="card-img-top" alt="Room 3" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Maro</h5>
+                        <h6>15.00$</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/rfissa.jpg" class="card-img-top" alt="Room 1" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Rfissa</h5>
+                        <h6>25.00$</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/kabab.jpg" class="card-img-top" alt="Room 2" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Kabab</h5>
+                        <h6>35.00$</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/seffa.jpeg" class="card-img-top" alt="Room 3" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Seffa</h5>
+                        <h6>20.00$</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Most Visited Section -->
+    <section id="services" class="container">
+        <h2 class="text-center mb-4">Most Visited</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/paris.jpg" class="card-img-top" alt="Service 1"  width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/dubai.jpg" class="card-img-top" alt="Service 2" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Dubai</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/london.jpg" class="card-img-top" alt="Service 3" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">London</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/chigago.jpg" class="card-img-top" alt="Service 1"  width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Chigago</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/istanbul.jpg" class="card-img-top" alt="Service 2" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Istanbul</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/marrakesh.jpg" class="card-img-top" alt="Service 3" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Marrakesh</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/tokyo.jpg" class="card-img-top" alt="Service 3" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Tokyo</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/alqahira.jpg" class="card-img-top" alt="Service 3" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Alqahira</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/seoul.jpeg" class="card-img-top" alt="Service 3" width="400px" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Seoul</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="container">
+        <h2 class="text-center mb-4">Book Your Trip</h2>
+        <form>
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="destination" class="form-label">Room</label>
+                <select class="form-select" id="destination">
+                    <option selected>Select Room...</option>
+                    <option value="destination1">Suite Room</option>
+                    <option value="destination2">Family Room</option>
+                    <option value="destination3">Deluxe Room</option>
+                    <option value="destination3">Classic Room</option>
+                    <option value="destination3">Superior Room</option>
+                    <option value="destination3">Luxury Room</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="checkInDate" class="form-label">Check-In Date</label>
+                <input type="date" class="form-control" id="checkInDate">
+            </div>
+            <div class="mb-3">
+                <label for="checkOutDate" class="form-label">Check-Out Date</label>
+                <input type="date" class="form-control" id="checkOutDate">
+            </div>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
+    </section>
+
+    <br>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="contactName" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="contactEmail" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Your Travel Agency. All rights reserved by Fartach Aymane.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
